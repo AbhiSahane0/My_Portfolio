@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <title>Abhijit Sahane.</title>
+  </head>
+  <body
+    class="bg-pink-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-montserrat min-h-screen transition-colors duration-300"
+  >
+    <!-- Header section  -->
+    <header class="px-4 py-4 sm:px-6 md:px-8 lg:px-24 lg:py-16">
+      <div class="flex justify-between items-center">
+        <div class="text-pink-500 flex items-center space-x-2">
+          <img
+            src="../assets/code-logo-transperent.png"
+            alt=""
+            class="w-16 h-12 sm:w-24 sm:h-16 md:w-32 md:h-24 transition-all duration-300"
+          />
+          <div class="flex flex-col sm:flex-row items-center">
+            <span class="text-xl sm:text-2xl md:text-3xl">Abhijit Sahane</span>
+            <div
+              class="h-12 border-l-2 mx-4 hidden lg:block dark:border-pink-400"
+            ></div>
+            <span class="text-xl md:text-2xl lg:text-3xl hidden lg:block">
+              I'm a Web Developer.
+            </span>
+          </div>
+        </div>
+
+        <!-- Nav links -->
+        <div class="flex items-center gap-4">
+          <nav class="hidden sm:flex">
+            <ul
+              class="flex text-lg md:text-xl lg:text-2xl gap-4 md:gap-6 lg:gap-8"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-pink-600 dark:hover:text-pink-400 transition-colors duration-300"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="hover:text-pink-600 dark:hover:text-pink-400 transition-colors duration-300"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="hover:text-pink-600 dark:hover:text-pink-400 transition-colors duration-300"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#skills"
+                  class="hover:text-pink-600 dark:hover:text-pink-400 transition-colors duration-300"
+                  >Skills</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-pink-600 dark:hover:text-pink-400 transition-colors duration-300"
+                  >Services</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Dark Mode Toggle Button -->
+          <button
+            onclick="toggleDarkMode()"
+            class="p-2 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors duration-300"
+          >
+            <!-- Sun icon for dark mode -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 hidden dark:block"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 block dark:hidden"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+              />
+            </svg>
+          </button>
+          <button class="sm:hidden">
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Home section -->
+    <main class="px-4 sm:px-6 md:px-8 lg:px-24">
+      <div class="flex flex-col lg:flex-row justify-between">
+        <div class="mt-8 lg:mt-12 flex flex-col flex-grow">
+          <section class="max-w-3xl mx-auto">
+            <p
+              class="text-center text-lg sm:text-xl md:text-2xl leading-relaxed"
+            >
+              Hi I'm Abhijit a B.Tech Computer Science student and will be
+              graduated in 2025. I am deeply passonated about Software
+              development specifically web development. Currently I am learning
+              the Full Stack Web development and I am really excieted to learn
+              more...
+            </p>
+          </section>
+
+          <div class="flex flex-col items-center mt-10">
+            <section class="w-full max-w-4xl">
+              <ul class="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8">
+                <li>
+                  <button
+                    class="border-2 px-6 py-3 rounded-full hover:bg-pink-300 dark:hover:bg-pink-600 border-pink-300 dark:border-pink-600 hover:text-white transition-all duration-300 transform hover:scale-105"
+                  >
+                    Instagram
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="border-2 px-6 py-3 rounded-full hover:bg-pink-300 dark:hover:bg-pink-600 border-pink-300 dark:border-pink-600 hover:text-white transition-all duration-300 transform hover:scale-105"
+                  >
+                    Linkedin
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="border-2 px-6 py-3 rounded-full hover:bg-pink-300 dark:hover:bg-pink-600 border-pink-300 dark:border-pink-600 hover:text-white transition-all duration-300 transform hover:scale-105"
+                  >
+                    Github
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="border-2 px-6 py-3 rounded-full hover:bg-pink-300 dark:hover:bg-pink-600 border-pink-300 dark:border-pink-600 hover:text-white transition-all duration-300 transform hover:scale-105"
+                  >
+                    Twitter
+                  </button>
+                </li>
+              </ul>
+            </section>
+            <button
+              class="border-2 px-8 py-4 rounded-full hover:bg-pink-300 dark:hover:bg-pink-600 border-pink-300 dark:border-pink-600 hover:text-white mt-10 transition-all duration-300 transform hover:scale-105"
+            >
+              View Resume
+            </button>
+          </div>
+        </div>
+
+        <!-- 
+        !!! Important
+        I dont have any image of myself which I can add in Home section so i avoided it and added some nice animation
+         -->
+
+        <section class="hidden xl:flex flex-col items-end ml-8">
+          <div class="flex gap-4">
+            <img
+              src="../assets/Bird-gif-img.gif"
+              alt="Flying bird"
+              class="w-48 h-48 transform hover:scale-110 transition-transform duration-500 hover:rotate-24 filter dark:brightness-90"
+            />
+            <img
+              src="../assets/Bird-gif-img.gif"
+              alt="Flying bird"
+              class="w-28 h-28 transform hover:scale-200 transition-transform duration-500 hover:-rotate-12 mt-32 filter dark:brightness-90"
+            />
+          </div>
+          <div>
+            <img
+              src="../assets/Bird-gif-img.gif"
+              alt="Flying bird"
+              class="w-48 h-48 transform hover:scale-125 transition-transform duration-500 hover:rotate-40 filter dark:brightness-90"
+            />
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- About me section -->
+    <div>
+      <h2 class="text-3xl md:text-4xl text-center mt-14 mb-6" id="about">
+        About Me
+        <div
+          class="h-1 w-20 bg-pink-300 dark:bg-pink-600 mx-auto mt-2 rounded-full"
+        ></div>
+      </h2>
+      <section class="flex justify-center items-center mt-4">
+        <img src="../assets/Circular-img.png" alt="" class="w-44 h-44" />
+      </section>
+      <section
+        class="bg-white max-w-4xl mx-auto px-4 py-16 rounded-xl shadow-2xl mt-14 mb-7 dark:bg-gray-800 transition-colors duration-200"
+      >
+        <div class="relative">
+          <div
+            class="absolute -top-8 -left-8 w-16 h-16 bg-pink-200 dark:bg-pink-400 rounded-full opacity-50"
+          ></div>
+          <div
+            class="absolute -bottom-8 -right-8 w-16 h-16 bg-pink-200 dark:bg-pink-400 rounded-full opacity-50"
+          ></div>
+          <div class="relative z-10 space-y-6">
+            <div class="prose prose-lg max-w-none dark:prose-invert">
+              <p
+                class="text-gray-700 dark:text-gray-200 text-lg sm:text-xl md:text-2xl leading-relaxed text-center font-light transition-colors duration-200"
+              >
+                I have always been fascinated by how technology shapes the
+                world, which led me to pursue a B.Tech in Computer Science. My
+                journey in software development started with curiosity and has
+                now turned into a deep passion.
+              </p>
+              <p
+                class="text-gray-700 dark:text-gray-200 text-lg sm:text-xl md:text-2xl leading-relaxed text-center font-light mt-6 transition-colors duration-200"
+              >
+                Currently, I am learning Full Stack Development and actively
+                working on real-world projects to enhance my skills. Beyond
+                coding, I love problem-solving and continuously strive for
+                growth.
+              </p>
+              <p
+                class="text-gray-700 dark:text-gray-200 text-lg sm:text-xl md:text-2xl leading-relaxed text-center font-light mt-6 transition-colors duration-200"
+              >
+                Apart from software development, I have a keen interest in
+                cricket and reading books. My goal is to contribute to
+                innovative software solutions and grow as a skilled developer in
+                the ever-evolving tech landscape.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="mt-16 mb-20">
+      <h2 class="text-3xl md:text-4xl text-center mb-6" id="skills">
+        Skills
+        <div
+          class="h-1 w-20 bg-pink-300 dark:bg-pink-600 mx-auto mt-2 rounded-full"
+        ></div>
+      </h2>
+
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
+        <div class="mb-6">
+          <div class="flex justify-between items-center mb-2">
+            <span class="text-sm font-medium text-gray-700 dark:text-gray-200"
+              >HTML / CSS</span
+            >
+            <span class="text-sm font-medium text-gray-700 dark:text-gray-200"
+              >85%</span
+            >
+          </div>
+          <div
+            class="h-4 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden"
+          >
+            <div
+              class="h-full bg-pink-400 dark:bg-pink-500 rounded-full"
+              style="width: 85%"
+            ></div>
+          </div>
+        </div>
+
+        <div class="mb-6">
+          <div class="flex justify-between items-center mb-2">
+            <span class="text-sm font-medium text-gray-700 dark:text-gray-200"
+              >JavaScript</span
+            >
+            <span class="text-sm font-medium text-gray-700 dark:text-gray-200"
+              >50%</span
+            >
+          </div>
+          <div
+            class="h-4 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden"
+          >
+            <div
+              class="h-full bg-pink-400 dark:bg-pink-500 rounded-full"
+              style="width: 50%"
+            ></div>
+          </div>
+        </div>
+
+        <div class="mb-6">
+          <div class="flex justify-between items-center mb-2">
+            <span class="text-sm font-medium text-gray-700 dark:text-gray-200"
+              >MERN Stack</span
+            >
+            <span class="text-sm font-medium text-gray-700 dark:text-gray-200"
+              >30%</span
+            >
+          </div>
+          <div
+            class="h-4 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden"
+          >
+            <div
+              class="h-full bg-pink-400 dark:bg-pink-500 rounded-full"
+              style="width: 30%"
+            ></div>
+          </div>
+        </div>
+
+        <div class="mb-6">
+          <div class="flex justify-between items-center mb-2">
+            <span class="text-sm font-medium text-gray-700 dark:text-gray-200"
+              >DBMS</span
+            >
+            <span class="text-sm font-medium text-gray-700 dark:text-gray-200"
+              >60%</span
+            >
+          </div>
+          <div
+            class="h-4 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden"
+          >
+            <div
+              class="h-full bg-pink-400 dark:bg-pink-500 rounded-full"
+              style="width: 60%"
+            ></div>
+          </div>
+        </div>
+
+        <div class="mb-6">
+          <div class="flex justify-between items-center mb-2">
+            <span class="text-sm font-medium text-gray-700 dark:text-gray-200"
+              >Java</span
+            >
+            <span class="text-sm font-medium text-gray-700 dark:text-gray-200"
+              >70%</span
+            >
+          </div>
+          <div
+            class="h-4 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden"
+          >
+            <div
+              class="h-full bg-pink-400 dark:bg-pink-500 rounded-full"
+              style="width: 70%"
+            ></div>
+          </div>
+        </div>
+
+        <div class="mb-6">
+          <div class="flex justify-between items-center mb-2">
+            <span class="text-sm font-medium text-gray-700 dark:text-gray-200"
+              >Data Structures & Algorithm</span
+            >
+            <span class="text-sm font-medium text-gray-700 dark:text-gray-200"
+              >60%</span
+            >
+          </div>
+          <div
+            class="h-4 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden"
+          >
+            <div
+              class="h-full bg-pink-400 dark:bg-pink-500 rounded-full"
+              style="width: 60%"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certifications section -->
+    <h2 class="text-3xl md:text-4xl text-center mt-14 mb-6" id="certification">
+      Certifications
+      <div
+        class="h-1 w-20 bg-pink-300 dark:bg-pink-600 mx-auto mt-2 rounded-full"
+      ></div>
+    </h2>
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- First Card -->
+        <article
+          class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl flex flex-col"
+        >
+          <div class="p-4 flex flex-col h-full">
+            <h3
+              class="text-lg md:text-xl font-medium mb-2 transition-colors text-gray-900 dark:text-white"
+            >
+              Introduction to full stack development by Internshala.
+            </h3>
+            <p
+              class="text-gray-600 dark:text-gray-300 mb-4 text-sm md:text-base flex-grow"
+            >
+              This course was part of the Full Stack Development program offered
+              by Internshala. It provided me with a brief introduction to Full
+              Stack Development and covered key concepts related to it.
+            </p>
+            <a
+              href="../assets/Full Stack Development_ Let's begin Training - Certificate of Completion.pdf"
+            >
+              <button
+                class="w-full bg-white dark:bg-gray-700 border-2 border-pink-200 dark:border-pink-400 py-2 px-4 rounded-lg hover:bg-pink-400 dark:hover:bg-pink-500 hover:text-white transition-all duration-300 transform hover:-translate-y-1 text-sm md:text-base dark:text-white"
+              >
+                View Certification
+              </button>
+            </a>
+          </div>
+        </article>
+
+        <!-- Second Card -->
+        <article
+          class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl flex flex-col"
+        >
+          <div class="p-4 flex flex-col h-full">
+            <h3
+              class="text-lg md:text-xl font-medium mb-2 transition-colors text-gray-900 dark:text-white"
+            >
+              Programming with JavaScript
+            </h3>
+            <p
+              class="text-gray-600 dark:text-gray-300 mb-4 text-sm md:text-base flex-grow"
+            >
+              This course, Introduction to JavaScript, was offered by Meta on
+              Coursera. Through this course, I learned various concepts related
+              to JavaScript, including variables, functions, loops, and DOM
+              manipulation. It also provided hands-on exercises to strengthen my
+              understanding of JavaScript fundamentals.
+            </p>
+            <a href="../assets/JavaScipt Certificate.pdf">
+              <button
+                class="w-full bg-white dark:bg-gray-700 border-2 border-pink-200 dark:border-pink-400 py-2 px-4 rounded-lg hover:bg-pink-400 dark:hover:bg-pink-500 hover:text-white transition-all duration-300 transform hover:-translate-y-1 text-sm md:text-base dark:text-white"
+              >
+                View Certification
+              </button>
+            </a>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <!-- Projects section -->
+    <div>
+      <h2 class="text-3xl md:text-4xl text-center mt-14 mb-6" id="projects">
+        Projects
+        <div
+          class="h-1 w-20 bg-pink-300 dark:bg-pink-600 mx-auto mt-2 rounded-full"
+        ></div>
+      </h2>
+      <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- First Card -->
+          <article
+            class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl flex flex-col"
+          >
+            <div class="p-4 flex flex-col h-full">
+              <h3
+                class="text-lg md:text-xl font-medium mb-2 transition-colors text-gray-900 dark:text-white"
+              >
+                MovieVerse Website
+              </h3>
+              <p
+                class="text-gray-600 dark:text-gray-300 mb-4 text-sm md:text-base flex-grow"
+              >
+                <b> 1 : </b>Developed a user-friendly website that allows users
+                to search for movies, rate them, and add them to a watch list.
+                <br />
+                <b> 2 : </b>Integrated an external API to fetch movie data in
+                real-time and display it on the interface. <br />
+                <b> 3 : </b>Implemented interactive features using React hooks
+                to manage API interactions and update the UI.
+              </p>
+              <a href="https://movie-verse-orcin-iota.vercel.app/">
+                <button
+                  class="w-full bg-white dark:bg-gray-700 border-2 border-pink-200 dark:border-pink-400 py-2 px-4 rounded-lg hover:bg-pink-400 dark:hover:bg-pink-500 hover:text-white transition-all duration-300 transform hover:-translate-y-1 text-sm md:text-base dark:text-white"
+                >
+                  View Live Project
+                </button>
+              </a>
+            </div>
+          </article>
+
+          <!-- Second Card -->
+          <article
+            class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl flex flex-col"
+          >
+            <div class="p-4 flex flex-col h-full">
+              <h3
+                class="text-lg md:text-xl font-medium mb-2 transition-colors text-gray-900 dark:text-white"
+              >
+                View Live Project
+              </h3>
+              <p
+                class="text-gray-600 dark:text-gray-300 mb-4 text-sm md:text-base flex-grow"
+              >
+                <b> 1 : </b>Developed with pure JavaScript and the Leaflet API,
+                users to map location and add tasks to that particular location.
+                <br />
+                <b> 2 : </b>Leaflet API is used to fetch the map data using
+                JavaScript. <br />
+                <b> 3 : </b>Devloped a interactive user interface
+              </p>
+              <a href="https://abhisahane0.github.io/Mapty-App/">
+                <button
+                  class="w-full bg-white dark:bg-gray-700 border-2 border-pink-200 dark:border-pink-400 py-2 px-4 rounded-lg hover:bg-pink-400 dark:hover:bg-pink-500 hover:text-white transition-all duration-300 transform hover:-translate-y-1 text-sm md:text-base dark:text-white"
+                >
+                  View Live Project
+                </button>
+              </a>
+            </div>
+          </article>
+
+          <!-- third card -->
+          <article
+            class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl flex flex-col"
+          >
+            <div class="p-4 flex flex-col h-full">
+              <h3
+                class="text-lg md:text-xl font-medium mb-2 transition-colors text-gray-900 dark:text-white"
+              >
+                Programming with JavaScript
+              </h3>
+              <p
+                class="text-gray-600 dark:text-gray-300 mb-4 text-sm md:text-base flex-grow"
+              >
+                <b> 1 : </b> Keeper App enables user users to efficiently create
+                ,edit, and delete notes. <br />
+                <b> 2 : </b>Use state hook is used to change user interface
+                dynamically.
+                <br />
+                <b> 3 : </b>Use local storage to store user notes and show them
+                when user visits again
+              </p>
+              <a href="https://abhisahane0.github.io/kepper/">
+                <button
+                  class="w-full bg-white dark:bg-gray-700 border-2 border-pink-200 dark:border-pink-400 py-2 px-4 rounded-lg hover:bg-pink-400 dark:hover:bg-pink-500 hover:text-white transition-all duration-300 transform hover:-translate-y-1 text-sm md:text-base dark:text-white"
+                >
+                  View Certification
+                </button>
+              </a>
+            </div>
+          </article>
+        </div>
+      </main>
+    </div>
+
+    <!-- Contact form  -->
+    <h2 class="text-3xl md:text-4xl text-center mt-14 mb-6" id="contact">
+      Contact Me
+      <div
+        class="h-1 w-20 bg-pink-300 dark:bg-pink-600 mx-auto mt-2 rounded-full"
+      ></div>
+    </h2>
+    <div class="p-4 flex justify-center items-center" id="contact">
+      <form
+        class="w-full max-w-md bg-white dark:bg-gray-800 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 space-y-6 transform hover:-translate-y-1"
+      >
+        <div class="space-y-4">
+          <div class="space-y-2">
+            <label
+              class="text-sm font-medium text-gray-700 dark:text-gray-200 block"
+            >
+              First Name
+            </label>
+            <input
+              type="text"
+              placeholder="Enter your first name"
+              class="w-full px-4 py-3 rounded-lg border border-pink-200 dark:border-pink-400 focus:border-pink-500 dark:focus:border-pink-400 focus:ring-2 focus:ring-pink-200 dark:focus:ring-pink-400 transition-all duration-200 outline-none hover:border-pink-300 dark:hover:border-pink-300 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-300"
+            />
+          </div>
+
+          <div class="space-y-2">
+            <label
+              class="text-sm font-medium text-gray-700 dark:text-gray-200 block"
+            >
+              Last Name
+            </label>
+            <input
+              type="text"
+              placeholder="Enter your last name"
+              class="w-full px-4 py-3 rounded-lg border border-pink-200 dark:border-pink-400 focus:border-pink-500 dark:focus:border-pink-400 focus:ring-2 focus:ring-pink-200 dark:focus:ring-pink-400 transition-all duration-200 outline-none hover:border-pink-300 dark:hover:border-pink-300 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-300"
+            />
+          </div>
+
+          <div class="space-y-2">
+            <label
+              class="text-sm font-medium text-gray-700 dark:text-gray-200 block"
+            >
+              Email
+            </label>
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="w-full px-4 py-3 rounded-lg border border-pink-200 dark:border-pink-400 focus:border-pink-500 dark:focus:border-pink-400 focus:ring-2 focus:ring-pink-200 dark:focus:ring-pink-400 transition-all duration-200 outline-none hover:border-pink-300 dark:hover:border-pink-300 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-300"
+            />
+          </div>
+
+          <div class="space-y-2">
+            <label
+              class="text-sm font-medium text-gray-700 dark:text-gray-200 block"
+            >
+              Message
+            </label>
+            <textarea
+              placeholder="Type your message here..."
+              class="w-full px-4 py-3 rounded-lg border border-pink-200 dark:border-pink-400 focus:border-pink-500 dark:focus:border-pink-400 focus:ring-2 focus:ring-pink-200 dark:focus:ring-pink-400 transition-all duration-200 outline-none hover:border-pink-300 dark:hover:border-pink-300 h-32 resize-none bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-300"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full bg-pink-400 hover:bg-pink-500 dark:bg-pink-500 dark:hover:bg-pink-600 text-white font-medium py-3 px-4 rounded-lg transition-all duration-300 mt-6 focus:outline-none focus:ring-2 focus:ring-pink-200 dark:focus:ring-pink-400 transform hover:-translate-y-1"
+          >
+            Send Message
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Footer section -->
+
+    <footer class="mt-12 dark:bg-gray-800 shadow-lg">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div
+          class="flex flex-col sm:flex-row justify-center items-center gap-6 mb-8"
+        >
+          <a href="tel:+918485071067">
+            <button
+              class="flex items-center gap-2 px-6 py-3 bg-white dark:bg-gray-700 border-2 border-pink-300 dark:border-pink-400 rounded-full hover:bg-pink-400 dark:hover:bg-pink-500 hover:border-pink-400 dark:hover:border-pink-500 hover:text-white dark:text-white transition-all duration-300 transform hover:scale-105 hover:-translate-y-1"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                />
+              </svg>
+              <span>Call Me</span>
+            </button>
+          </a>
+
+          <a href="mailto:your.email@example.com" class="group">
+            <button
+              class="flex items-center gap-2 px-6 py-3 bg-white dark:bg-gray-700 border-2 border-pink-300 dark:border-pink-400 rounded-full hover:bg-pink-400 dark:hover:bg-pink-500 hover:border-pink-400 dark:hover:border-pink-500 hover:text-white dark:text-white transition-all duration-300 transform hover:scale-105 hover:-translate-y-1"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                />
+              </svg>
+              <span>Email Me</span>
+            </button>
+          </a>
+        </div>
+
+        <div
+          class="w-full h-px bg-pink-400 dark:bg-pink-400 opacity-50 my-8"
+        ></div>
+
+        <div class="text-center">
+          <p class="text-gray-600 dark:text-gray-300 mb-4">
+            Thank you for visiting my portfolio!
+          </p>
+          <p class="text-sm text-gray-500 dark:text-gray-400">
+            &copy; 2025 Abhijit Sahane. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <!-- theam button code reffered through docs -->
+  <script>
+    // Set initial theme to light on first visit
+    if (!localStorage.theme) {
+      localStorage.theme = "light";
+    }
+
+    // Apply the theme from localStorage
+    if (localStorage.theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+
+    // Toggle function
+    function toggleDarkMode() {
+      if (document.documentElement.classList.contains("dark")) {
+        document.documentElement.classList.remove("dark");
+        localStorage.theme = "light";
+      } else {
+        document.documentElement.classList.add("dark");
+        localStorage.theme = "dark";
+      }
+    }
+  </script>
+</html>
